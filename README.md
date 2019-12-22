@@ -35,7 +35,8 @@ _Ejecutar el comando para la ejecucion del front y despliegue en el navegador qu
 
 ```
 ng serve --open=true
-```
+
+``` 
 
 ## Construido con 🛠️
 

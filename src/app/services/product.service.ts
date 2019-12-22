@@ -12,7 +12,7 @@ export class ProductService {
 
   constructor(private http: HttpClient) { }
 
-  apiUrl = 'http://localhost:8080/producto';
+  apiUrl = 'https://cl-tcs-technical-app.herokuapp.comgit st/producto';
 
   static handleError(error) {
     let errorMessage = '';
