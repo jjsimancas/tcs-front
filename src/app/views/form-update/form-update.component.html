@@ -59,7 +59,7 @@
                         <button class="btn btn--radius-2 btn--blue" type="submit">Actualizar</button>
                     </div>
                 </form>
-                <code class="text-danger">{{response.mensaje}}</code>
+                <code class="text-danger" *ngIf="response">{{response.mensaje}}</code>
             </div>
         </div>
     </div>

@@ -15,10 +15,10 @@ export class CreateRecordComponent implements OnInit {
   @Input() public actualizar: boolean;
   public product: Product;
   public responseCreate: Responsecreate;
-  public id: number;
+  public id: string;
   public producto: string;
   public descripcion: string;
-  public cantidad: number;
+  public cantidad: string;
   public marca: string;
   public categoria: string;
 

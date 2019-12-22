@@ -56,10 +56,10 @@
                         </div>
                     </div>
                     <div class="row row-space p-t-15">
-                            <button class="btn btn--radius-2 btn--blue" type="submit">Guardar</button>
+                        <button class="btn btn--radius-2 btn--blue" type="submit">Guardar</button>
                     </div>
                 </form>
-                <code class="text-danger">{{responseCreate.mensaje}}</code>
+                <code class="text-danger" *ngIf="responseCreate">{{responseCreate.mensaje}}</code>
             </div>
         </div>
     </div>
