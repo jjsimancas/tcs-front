@@ -1,0 +1,66 @@
+<div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+    <div class="wrapper wrapper--w680">
+        <div class="card card-4">
+            <div class="card-body">
+                <div class="row row-space">
+                    <h2 class="title">Actualizar Producto</h2>
+                </div>
+
+                <form form #myform="ngForm" (ngSubmit)="updateRecord(myform)" class="form form-register">
+                    <div class="row row-space">
+                        <div class="col-5">
+                            <div class="input-group">
+                                <label class="label">ID Producto</label>
+                                <input class="input--style-4" type="number" name="id" [ngModel]="id">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group">
+                                <label class="label">Producto</label>
+                                <input class="input--style-4" type="text" [ngModel]="producto" name="producto">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-space">
+                        <div class="col-5">
+                            <div class="input-group">
+                                <label class="label">Descripcion</label>
+                                <input class="input--style-4" type="text" name="descripcion" [ngModel]="descripcion">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group">
+                                <label class="label">Existencia</label>
+                                <input class="input--style-4" type="number" name="cantidad" [ngModel]="cantidad">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-space">
+                        <div class="col-5">
+                            <div class="input-group">
+                                <label class="label">Marca</label>
+                                <input class="input--style-4" type="text" name="marca" [ngModel]="marca">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="rs-select2 js-select-simple select--no-search">
+                            <select name="categoria" [ngModel]="categoria">
+                                <option disabled="disabled" selected="selected">Categoria</option>
+                                <option>Correas</option>
+                                <option>Motor</option>
+                                <option>Carroceria</option>
+                            </select>
+                            <div class="select-dropdown"></div>
+                        </div>
+                    </div>
+                    <div class="row row-space p-t-15">
+                        <button class="btn btn--radius-2 btn--blue" type="submit">Actualizar</button>
+                    </div>
+                </form>
+                <code class="text-danger">{{response.mensaje}}</code>
+            </div>
+        </div>
+    </div>
+</div>

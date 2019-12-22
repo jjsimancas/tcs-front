@@ -1,0 +1,16 @@
+<ng-container>
+    <div class="ubicacion col-md-4">
+        <h1 class="text-primary">Detalle Producto</h1>
+    </div>
+    <div class="input-group col-md-5 ubicacion-var">
+        <div class="input-group-prepend">
+            <span class="input-group-text bg-white">{{title}}</span>
+        </div>
+        <input type="text" appNumberonly required [(ngModel)]="id"
+               class="form-control col-sm-4 col-md-4 col-xl-6" placeholder="Ingresa ID de producto">
+        <button [disabled]="!id" class="btn btn-primary margin-button" (click)="getProduct(id)">{{OK}}</button>
+    </div>
+</ng-container>
+<ng-container *ngIf="product">
+    <app-detail-product [product]="product"></app-detail-product>
+</ng-container>
